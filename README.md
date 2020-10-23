@@ -65,3 +65,6 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
         항상 1을 더합니다.
         사실 처음 부터 하였을때는 틀렸다고 나왔지만, 뒤에서 부터 하니 해결되었습니다.
         
+## Finding triangle Path(L3)
+1. 문제: 0,0부터 시작하여 삼각형 가장 밑변으로 내려갈때 최댓값을 구하시오
+2. 해결: dynamic programming을 사용하면됨. 많이 해봐서 패스.
