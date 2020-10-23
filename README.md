@@ -39,3 +39,7 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
         while loop을 사용해 만약 쓰러뜨리고자한 도미노가 살아있다면 그 안에 loop을 넣어 더 이상 없을 때까지 loop을 돌리고 넘어진 것은 따로 bool array에 넣어 true로 설정하였다.
         만약 더 이상 쓰러뜨릴것이 없다면 loop을 나와 bool array 에서 true 인것을 count하면 끝.
         
+## Sum of the numbers in the specific range (L3)
+1. 문제: n개의 숫자를 받은 후, 특정 구간의 숫자들을 합함
+2. 해결: 사실 쓸시간도 아까워서 중간과정 생략. 너무 쉬운 문제임.
+           사실, dynamic programming으로 분류되어있는데 그렇게 푸는 방법은 찾는 중
