@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int main() {
+	int N,temp,answer = 0;
+	int max = 0;
+	cin >> N;
+	int v[N];
+	
+	for(int i = 0 ; i < N ; i++){
+		cin >> temp;
+		v[i] = temp;
+	}
+	for(int i = N-1 ; i > 1 ; i--){
+		if(v[i] - v[i-1] > answer){
+			answer = v[i] - v[i-1];
+		}
+		answer ++;
+	}
+	if(answer < v[0])
+		answer = v[0] + 1;
+	cout << ++answer;
+	return 0;
+}
+}
