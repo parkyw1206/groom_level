@@ -68,3 +68,7 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
 ## Finding triangle Path(L3)
 1. 문제: 0,0부터 시작하여 삼각형 가장 밑변으로 내려갈때 최댓값을 구하시오
 2. 해결: dynamic programming을 사용하면됨. 많이 해봐서 패스.
+
+## LIS (LIS)
+1. 문제: 
+2. 해결: two pointer
