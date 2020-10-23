@@ -43,3 +43,7 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
 1. 문제: n개의 숫자를 받은 후, 특정 구간의 숫자들을 합함
 2. 해결: 사실 쓸시간도 아까워서 중간과정 생략. 너무 쉬운 문제임.
            사실, dynamic programming으로 분류되어있는데 그렇게 푸는 방법은 찾는 중
+
+## Padovan sequence (L3)
+1. 문제: 파도반 수열을 이용해 n번째의 정보를 얻어야함
+2. 해결: 쉬움. 피보나치와 비슷한데, fib(n) = fib(n-1) + fib(n-2)하는 반면 padovan은 pad(n) = pad(n-2) + pad(n-3)만 사용
