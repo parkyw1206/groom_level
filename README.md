@@ -19,6 +19,7 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
 3. output: the total number of domino that is dropped.
 4. variables : 
               -- input -----------------------------------------------------------
+             
               a: (int) 도미노의 갯수 --> input
               b: (int) 도미노가 쓰러뜨리는 도미노의 줄 --> input
               c: (int) 직접 손으로 쓰러뜨릴 도미노의 갯수 --> input
@@ -26,6 +27,7 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
               y:(int) b줄에 걸쳐 x에 의해 쓰러질 도미노--> input
               start:(int) startVec에 넣기전, 쉽게 cin 하기위해 temp variable --> input
               m: b에서 얻은 정보들을 이용하여 m[x] = y로 설정함. 
+              
               -- output ---------------------------------------------------------------
               answer:(int) the total dominoes which are dropped
               tempNum:(int) 그 다음 쓰러질 도미노를 point 하는 temp variable
