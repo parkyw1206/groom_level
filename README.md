@@ -72,3 +72,30 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
 ## LIS (LIS)
 1. 문제: 
 2. 해결: two pointer
+
+## Amusement Park (L2)
+1. 문제: 주어진 K안에서 최소 갯수의 폐기물을 처리하자
+2. Variables:
+        --
+        
+        --input ---------------------------------------------------------
+        1. waste : N X N array안에 있는 핵 폐기물의 갯수를 저장
+        2. N: array의 변의 길이
+        3. K : 원하는 K X K 의 갯수를 구함
+        -- output -------------------------------------------------------
+        1. answer: count 중 가장 작은 count
+        2. count: temp variable --> K X K 안에 있는 폐기물의 갯수
+        
+3. 해결: 그냥 처음부터 완전 탐색을 하였습니다. 단지 우리개 해야할 일은
+         K X K 의 구역의 첫 index를 포인트만 해주면되고,그 안에 또 nested loop를 사용해
+         폐기물을 다 더 하면 됩니다.
+
+## check Prime(L2)
+1. 문제: number를 받고 그 숫자가 소수인지 판명
+2. variables: 
+        --
+        
+        --input ------------------------------------------------------
+        1. num : 우리가 판명해야하는 숫자
+
+3. 해결: for loop을 이용하여 2부터 원하는 숫자 사이에 단 하나의 숫자라도 mod를 했을때 0인경우는 prime 이 아닙니다.       
