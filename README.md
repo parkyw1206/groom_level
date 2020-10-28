@@ -137,3 +137,10 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
 
 3. 해결: 그냥 vector에 1 부터 끝까지 N까지 넣습니다. 그 후, pos = 0 에 K씩 더해 vector에서 지웁니다.
         해당 vector의 사이즈가 2이상인 경우, 끝내고 남는 숫자를 프린트합니다.
+
+## 나이트의 이동(L5)
+1. 문제: 특정 모양으로 밖에 움직이지 못하는 기사가 원하는 포인트로 움직일 수 있는 최단거리를 구해야합니다.
+2. 해결: 최단 거리 문제이므로, bfs를 사용하였습니다.
+         그러므로 queue를 사용했지만, 2번문제는 l이 100이므로 계속 에러가 떴습니다.
+         그 이유는 queue<pair<pair<int,int>,int>>를 사용해서였습니다. // q.first.first = x , q.first.second = y, q.second = dist
+         따라서 chess판에 거리를 기입하므로 queue<pair<int,int>> 로 바꾸었더니 잘 움직였습니다.
