@@ -2,62 +2,41 @@
 #include <algorithm>
 
 using namespace std;
-bool isprime(int num){
-	if(num == 2 || num == 3 || num == 5 || num == 7 || num == 11
-			|| num == 13 || num == 17 || num == 19 || num == 23 
-			|| num == 29)
-		return true;
-	else
-		return false;
+bool isPrime(int num){
+	for(int i = 2 ; i < num ; i++){
+		if(num % i == 0)
+			return false;
+	}
+	return true;
 }
 int main() {
-	int input;
-	cin >> input;
-	bool notP;
-	int arr[input+1];
-	int sum = 0;
-	for(int i = 1; i <= input ; i++){
-		arr[i] = i;
+	int num;
+	bool p;
+	cin >> num;
+	int arr[num];
+	
+	for(int i = 0;  i < num; i++){
+		arr[i] = i+1;
 	}
 	do{
-		int left = 1,right = 2;
-		notP = false;
-		sum = arr[left]+ arr[right];
-		while(left <= input){
-			if(!isprime(sum)){
-				notP = true;
-				break;
-			}
-			else{
-				sum -= arr[left];
-				left++;
-				if(left == input)
-					right = 1;
-				else
-					right++;
-				sum += arr[right];
-			}
+		p = true;
+		if(isPrime(arr[0] + arr[num-1])){
+			for(int j = 0 ; j < num-1 ; j++){
+				if(!isPrime(arr[j] + arr[j+1])){
+					p = false;
+					break;
+				}
+			}			
 		}
-		if(notP == false){
-			for(int j = 1 ; j <= input; j++){
+		else
+			p = false;
+		if(p == true){
+			for(int j = 0 ; j < num ; j++){
+				if(j > 0) cout << " ";
 				cout << arr[j];
-				if(j == input)
-					cout << endl;
-				else
-					cout << " ";
 			}
+			cout << endl;
 		}
-	}while(next_permutation(arr+2,arr+input+1));
+	}while(next_permutation(arr+1,arr+num));
 	return 0;
-}
-
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout<<"Hello World";
-
-    return 0;
 }
