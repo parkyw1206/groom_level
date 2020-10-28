@@ -12,6 +12,15 @@ https://level.goorm.io/l/official/algorithm/dfsBfs
             따라서, recursion을 사용. 만약 움직일때, true면 path++, else path -- 하면 되므로 손쉬웠다.
              Queue를 해도 푸는 것은 가능한 것으로 보이나 복잡해 보여서 현 상태론 스킵함.
           
+## Prime Cycle (L5)
+1. 문제: 1부터 N까지 숫자가 있는 사이클이 있습니다. 양옆 숫자 2개의 합이 모두 소우일 경우, print 합시다.
+2: variables: 
+        
+        -- input-----------------------------------------
+        a. cycle 의 숫자 갯수
+       
+3. 해결: next_permutation을 사용했습니다. 그 후, checkPrime function을 제작하여, 완벽탐색을 구현하면 됩니다.
+
 ## Domino Game (L3)
 1. 문제: a개의 도미노가 존재. b줄에 걸쳐 각각의 도미노 번호가 쓰러뜨리는 그 다음 번호를 설정. C줄에 걸쳐 손으로 직접 쓰러뜨리는 도미노 설정.
 2. Input: 첫번째 줄에 a,b,c ; 두번째 줄부터 총 b개의 줄까지 각각 두개의 도미노를 설정하는데, 첫번째 도미노가 그 다음 도미노를 쓰러뜨림.
